@@ -1,10 +1,13 @@
 
 <template>
   <div id="app">
+
     <div class="part">
+      <h2>声明式渲染</h2>
       {{ msg }}
     </div>
     <div class="part">
+      <p>声明式渲染</p>
       <span v-bind:title="message">
         鼠标停留此处几秒,可以看到动态绑定的title
       </span>
@@ -32,7 +35,7 @@
     name: 'hello',
     data () {
       return {
-        msg: '声明式渲染',
+        msg: '声明式渲染数据',
         message: '页面加载于 ' + new Date(),
         seen: true,
         todoList:[
