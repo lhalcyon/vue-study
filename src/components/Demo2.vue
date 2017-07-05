@@ -20,7 +20,32 @@
     <div class="part">
       <h2>指令</h2>
 
+      <div v-if="seen">v-if</div>
+
+      <a v-bind:href="url" target="_blank">参数</a>
+
+      <a v-on:click="doAlert">事件</a>
+
+      <br/>
+
+      <form v-on:submit.prevent="onSubmit">
+        TODO 事件冒泡
+      </form>
     </div>
+
+    <div class="part">
+      <h2>过滤器</h2>
+      <p>在mustaches中:{{ message | capitalize }}</p>
+      <!--<div v-bind:id="rawId | formedId">在v-bind中 TODO找出问题</div>-->
+
+      <h2>缩写</h2>
+
+      <a :href="url">v-bind缩写</a>
+
+      <a @click="doAlert">v-on缩写</a>
+
+    </div>
+
 
     <input/>
   </div>
@@ -33,9 +58,34 @@
             text: 'text',
             html: '<a href="http://www.baidu.com" target="_blank">html链接</a>',
             dynamicId: 'my_id',
-            isDisabled: true
+            isDisabled: true,
+            seen: true,
+            url: 'http://www.qq.com',
+            message: 'abc',
+            rawId: 'yellowP',
+            redP: 'redP'
           }
+      },
+      methods:{
+        doAlert:function () {
+          alert('事件弹框')
+        },
+        onSubmit:function () {
+          alert('onSubmit')
+        }
+      },
+      filters:{
+        capitalize:function (val) {
+          if (!val) return ''
+          val  = val.toString()
+          return val.charAt(0).toUpperCase() + val.slice(1)
+        },
+        formedId:function (val) {
+          if (val) return this.rawId
+          return this.redP
+        }
       }
+
   }
 </script>
 
@@ -51,4 +101,13 @@
 
     background-color: blueviolet;
   }
+
+  #redP{
+    background-color: crimson;
+  }
+
+  #yellowP{
+    background-color: yellow;
+  }
+
 </style>
