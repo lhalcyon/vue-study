@@ -1,3 +1,4 @@
+
 <template>
     <div>
       <h2>列表渲染</h2>
@@ -11,7 +12,6 @@
         </ul>
         <h3>第二参数</h3>
         <ul>
-          TODO parrentMessage 未显示
           <li v-for="(item , index) in items">
             {{ pMessage }} - {{ index }} - {{ item.message }}
           </li>
