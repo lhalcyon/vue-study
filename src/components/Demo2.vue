@@ -91,11 +91,6 @@
 
 
 <style>
-  .part{
-    background-color: azure;
-    padding: 16px;
-    margin: 16px;
-  }
 
   .my_id{
 
