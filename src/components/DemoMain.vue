@@ -6,6 +6,8 @@
     <router-link to="/4">Demo4</router-link>
     <router-link to="/5">Demo5</router-link>
     <router-link to="/6">Demo6</router-link>
+    <router-link to="/7">Demo7</router-link>
+    <router-link to="/8">Demo8</router-link>
     <transition>
       <keep-alive>
         <router-view></router-view>

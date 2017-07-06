@@ -17,7 +17,8 @@
       <div v-bind:class="[{class1:!isActive},class2]">数组中使用对象</div>
 
       <h4>用在组件上</h4>
-      TODO
+
+      <p class="todo">TODO</p>
 
       <h3>绑定内联样式</h3>
 
@@ -29,7 +30,7 @@
 
       <h4>数组语法</h4>
 
-      TODO
+      <p class="todo">TODO</p>
 
     </div>
   </div>

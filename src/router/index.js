@@ -6,6 +6,8 @@ import Demo3 from '@/components/Demo3'
 import Demo4 from '@/components/Demo4'
 import Demo5 from '@/components/Demo5'
 import Demo6 from '@/components/Demo6'
+import Demo7 from '@/components/Demo7'
+import Demo8 from '@/components/Demo8'
 import DemoMain from '@/components/DemoMain'
 
 
@@ -41,6 +43,14 @@ export default new Router({
         {
           path: '/6',
           component: Demo6
+        },
+        {
+          path: '/7',
+          component: Demo7
+        },
+        {
+          path: '/8',
+          component: Demo8
         },
       ]
     }
