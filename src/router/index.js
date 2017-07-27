@@ -8,6 +8,7 @@ import Demo5 from '@/components/Demo5'
 import Demo6 from '@/components/Demo6'
 import Demo7 from '@/components/Demo7'
 import Demo8 from '@/components/Demo8'
+import AutoPackageEmail from '@/components/AutoPackageEmail'
 import DemoMain from '@/components/DemoMain'
 
 
@@ -52,6 +53,10 @@ export default new Router({
           path: '/8',
           component: Demo8
         },
+        {
+          path: '/9',
+          component: AutoPackageEmail
+        }
       ]
     }
   ]

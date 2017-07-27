@@ -8,6 +8,7 @@
     <router-link to="/6">Demo6</router-link>
     <router-link to="/7">Demo7</router-link>
     <router-link to="/8">Demo8</router-link>
+    <router-link to="/9">AutoPackageEmail</router-link>
     <transition>
       <keep-alive>
         <router-view></router-view>
